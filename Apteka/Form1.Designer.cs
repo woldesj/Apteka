@@ -155,6 +155,7 @@
             this.btnLogin.Size = new System.Drawing.Size(95, 32);
             this.btnLogin.TabIndex = 8;
             this.btnLogin.Text = "Вхід";
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnReset
             // 

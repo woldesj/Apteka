@@ -42,5 +42,19 @@ namespace Apteka
            txtUsername.Clear();
             txtPassword.Clear();
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            if (txtUsername.Text == "admin" && txtPassword.Text == "admin")
+            {
+                AdminPanel am = new AdminPanel();
+                am.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Неправильне ім'я користувача, або пароль", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
